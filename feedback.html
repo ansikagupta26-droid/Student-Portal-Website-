@@ -31,31 +31,45 @@
         </nav>
         <hr>
         <main>
-        <form>
+        <form action="#" method="post">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name">
             <br>
             <label for="email">Email:</label>
             <input type="email" id="email" name="email">
             <br>
-            <h2>Feedback Type</h2>
-            <select>
-                <option>Course</option>
-                <option>Website</option>
-                <option>Teacher</option>
-                <option>Other</option>
+            <label for="feedback-type">Feedback Type:</label>
+            <select id="feedback-type" name="feedback-type">
+                <option value="course">Course</option>
+                <option value="website">Website</option>
+                <option value="teacher">Teacher</option>
+                <option value="other">Other</option>
             </select>
             <h2>Rating</h2>
-            <input type="radio" name="rating" value="1"> 1
-            <input type="radio" name="rating" value="2"> 2
-            <input type="radio" name="rating" value="3"> 3
-            <input type="radio" name="rating" value="4"> 4
-            <input type="radio" name="rating" value="5"> 5
+            <label for="rating1">
+            <input type="radio" id="rating1" name="rating" value="1"> 1
+            </label>
+            <label for="rating2">
+            <input type="radio" id="rating2" name="rating" value="2"> 2
+            </label>
+            <label for="rating3">
+            <input type="radio" id="rating3" name="rating" value="3"> 3
+            </label>
+            <label for="rating4">
+            <input type="radio" id="rating4" name="rating" value="4"> 4
+            </label>
+            <label for="rating5">
+            <input type="radio" id="rating5" name="rating" value="5"> 5
+            </label>
             <br>
-            <input type="checkbox" name="recommend" value="yes"> I would recommend this portal
+            <label for="reccomend">
+            <input type="checkbox" id="reccomend" name="recommend" value="yes"> I would recommend this portal
+            </label>
             <br>
             <h2>Comments</h2>
-            <textarea name="comments"></textarea>
+            <br>
+            <label for="comments">Comments:</label>
+            <textarea id="comments" name="comments"></textarea>
             <button type="submit">Submit Feedback</button>
 
         </form>
